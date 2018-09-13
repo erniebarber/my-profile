@@ -6,9 +6,11 @@ sudo yum -y update
 
 # install apaches
 sudo yum install httpd
-sudo systemctl enable httpd
-sudo systemctl start httpd
 
+
+sudo systemctl stop httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
 #allowApache trafic through firewall
 sudo firewall-cmd --zone=public --permanent --add-service=http
