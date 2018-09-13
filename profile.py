@@ -20,6 +20,9 @@ request = pc.makeRequestRSpec()
 # Add a raw PC to the request.  CHANGED: to XenVM
 node = request.XenVM("node")
 
+#need a public IP
+node.routable_control_ip = False
+
 # add CentOS image to the Node
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
 
