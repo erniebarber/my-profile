@@ -11,6 +11,7 @@ import geni.portal as portal
 # Import the ProtoGENI library.
 import geni.rspec.pg as pg
 
+
 # Create a portal context.
 pc = portal.Context()
 
