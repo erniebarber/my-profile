@@ -3,7 +3,7 @@
 
 #update the package
 sudo yum clean all
-sudo yum -y update
+sudo yum -y install
 
 # install apaches
 sudo yum install httpd
