@@ -13,8 +13,8 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 #allowApache trafic through firewall
-sudo firewall-cmd --zone=public --permanent --add-service=http
-sudo firewall-cmd --zone=public --permanent --add-service=https
+sudo firewall-cmd --permanent --add-port=80/tcp
+sudo firewall-cmd --permanent --add-port=443/tcp
 sudo firewall-cmd --reload
 
 sudo systemctl status httpd
