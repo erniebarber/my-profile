@@ -1,13 +1,10 @@
 #!/bin/bash
 
+echo "This is a Apache installation script" > /tmp/silly.txt
 
-#update the package
-
-sudo yum -y update
-
-# install apaches
-sudo yum install httpd
-#allowApache trafic through firewall
+sudo yum update -y
+sudo yum install -y httpd
+sudo systemctl restart httpd.service
 
 echo "This is a silly script" > /tmp/silly.txt
 
